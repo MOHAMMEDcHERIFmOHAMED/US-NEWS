@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEWS-WEBSITE</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            background-color: #e0dede;
+            overflow-x: hidden;
+        }
+        html, body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+        header{
+            background-color: red;
+            text-align: center;
+            padding: 25px;
+            width: 100%;
+        }
+        
+        header h1{
+            font-weight: 900;
+            font-size: 35px;
+            color: #ffff;
+        }
+        nav{
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+       nav ul{
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        ul li{
+            background-color: rgb(238, 238, 238);
+            padding: 10px 15px ;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: ease .6s ;
+        }
+        li:hover{
+            background-color: rgba(255, 0, 0, 0.785);
+            color: #fff;
+        }
+/*______________  MAIN SECTION    ______________ */
+        .main{
+            gap: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 25px;
+        }
+        .news{
+            overflow: hidden;
+            width: 430px;
+            height: 440px;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .news .img{
+            height: 200px;
+            width: 100%;
+        }
+        .news .img img{
+            height: 100%;
+            width: 100%;
+        }
+        .info{
+            margin: 15px;
+        }
+        .info p{
+            margin: 10px 0;
+            color: rgb(118, 117, 117);
+        }
+        .Read_btn{
+            background-color: rgb(188, 0, 0);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+        .link{
+            color: #ffff;
+        }
+        /* media queries */
+
+        @media (max-width:768px) {
+            nav ul{
+                gap: 15px;
+            }
+            .news{
+            width: 340px;
+            height: 440px;
+        }
+        @media (max-width:425px){
+            nav{
+                padding: 10px;
+                margin-top: 10px;
+            }
+        }
+        @media (max-width:375px){
+            nav ul{
+                gap: 10px;
+            }
+            ul li{
+            padding: 7px 10px ;
+        }
+        }
+        }
+</style>
+</head>
+<body>
+
+    <header>
+        <h1>US NEWS WEBSITE </h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li>General</li>
+            <li>Busness</li>
+            <li>Entertainment</li>
+            <li>Health</li>
+            <li>Science</li>
+            <li>Sports</li>
+            <li>Technology</li>
+        </ul>
+    </nav>
+    
+    <div class="main"></div>
+    
+    <script src="NEWS.js" ></script>
+</body>
+</html>
