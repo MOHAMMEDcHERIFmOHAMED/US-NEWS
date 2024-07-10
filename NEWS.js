@@ -14,7 +14,6 @@ async function getInfo(){
     let response = await fetch(URL) ;
      data = await response.json() ;
 
-    console.log(data) ;
     main.innerHTML = "" ; 
     for(i=0 ; i < data.articles.length; i++){
         main.innerHTML += `
@@ -35,6 +34,5 @@ document.addEventListener('click',(e)=>{
     if(e.target.tagName === "LI"){
         category = `${e.target.textContent}`;
         getInfo();
-        console.log(category);
     }
 })
